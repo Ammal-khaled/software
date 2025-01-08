@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Alumni Platform</title>
+  <link rel="stylesheet" href="Dashboardstyle.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>Welcome, [User Name]!</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="JobBoardpage.html">Job Board</a></li>
+        <li><a href="mentorship.html">Mentorship</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="notifications">
+      <h2>Notifications</h2>
+      <ul>
+        <li>You have a new mentorship request.</li>
+        <li>An event you joined is starting tomorrow.</li>
+        <li>A new job posting matches your profile!</li>
+      </ul>
+    </section>
+
+    <section class="quick-links">
+      <h2>Quick Links</h2>
+      <div class="links">
+        <a href="mentorship.html" class="btn">Find Mentorship</a>
+        <a href="job-board.html" class="btn">Browse Jobs</a>
+        <a href="events.html" class="btn">Join Events</a>
+      </div>
+      <a href="homepage.html" class="home-button">Home</a>
+    </section>
+
+    <!-- New Post Section (News Feed) -->
+    <section class="post-form">
+      <h2>Create a Post</h2>
+      <textarea id="post-content" placeholder="Share your achievements or updates..." rows="4"></textarea>
+      <button id="post-button">Post</button>
+    </section>
+
+    <section class="news-feed">
+      <h2>Recent Posts</h2>
+      <ul id="feed">
+        <li>
+          <h3>John Doe</h3>
+          <p>Got promoted to Senior Developer at Tech Solutions!</p>
+          <div class="interactions">
+            <span>👍 10</span>
+            <span>💬 2</span>
+            <span>🔁 5</span>
+          </div>
+        </li>
+        <li>
+          <h3>Sarah Smith</h3>
+          <p>Attended an amazing workshop on data science. Highly recommend it!</p>
+          <div class="interactions">
+            <span>👍 7</span>
+            <span>💬 3</span>
+            <span>🔁 4</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  
+  <script>
+    document.getElementById("post-button").addEventListener("click", function () {
+      const content = document.getElementById("post-content").value;
+
+      if (!content) {
+        alert("Please write something before posting.");
+        return;
+      }
+
+      const feed = document.getElementById("feed");
+      const newPost = document.createElement("li");
+
+      newPost.innerHTML = `
+        <h3>Your Name</h3>
+        <p>${content}</p>
+        <div class="interactions">
+          <span>👍 0</span>
+          <span>💬 0</span>
+          <span>🔁 0</span>
+        </div>
+      `;
+
+      feed.prepend(newPost);
+      document.getElementById("post-content").value = "";
+    });
+  </script>
+</body>
+</html>

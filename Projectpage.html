@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Alumni Platform</title>
+  <link rel="stylesheet" href="Projectstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#" id="create-tab">Create Project</a></li>
+        <li><a href="#" id="projects-tab">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Create Project Section -->
+    <section id="create-project" class="tab-content">
+      <h2>Create a Project</h2>
+      <form id="project-form">
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" placeholder="Enter project name">
+        
+        <label for="description">Project Description:</label>
+        <textarea id="description" rows="5" placeholder="Describe your project"></textarea>
+        
+        <label for="contact">Preferred Communication Method:</label>
+        <input type="text" id="contact" placeholder="Email, Phone, etc.">
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <h3>AI Chatbot</h3>
+          <p>Description: A chatbot that helps users find answers quickly.</p>
+          <button onclick="contactOwner('owner@example.com')">Contact Owner</button>
+        </li>
+        <li>
+          <h3>Web-Based Task Manager</h3>
+          <p>Description: Manage your daily tasks effectively with this tool.</p>
+          <button onclick="contactOwner('owner2@example.com')">Contact Owner</button>
+        </li>
+      </ul>
+      
+      <!-- Home Button -->
+      <a href="homepage.html" class="home-button">Home</a>
+    </section>
+  </main>
+
+  <script>
+    // Tab Switching Logic
+    const createTab = document.getElementById('create-tab');
+    const projectsTab = document.getElementById('projects-tab');
+    const createProjectSection = document.getElementById('create-project');
+    const projectsSection = document.getElementById('projects');
+
+    createTab.addEventListener('click', () => {
+      createProjectSection.style.display = 'block';
+      projectsSection.style.display = 'none';
+      createTab.classList.add('active');
+      projectsTab.classList.remove('active');
+    });
+
+    projectsTab.addEventListener('click', () => {
+      createProjectSection.style.display = 'none';
+      projectsSection.style.display = 'block';
+      projectsTab.classList.add('active');
+      createTab.classList.remove('active');
+    });
+
+    function contactOwner(email) {
+      window.location.href = `mailto:${email}`;
+    }
+
+    // Initialize page with the Projects section
+    projectsTab.click();
+  </script>
+</body>
+</html>

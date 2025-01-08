@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Alumni Platform</title>
+  <link rel="stylesheet" href="ProfileManagementstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Your Profile</h1>
+    <p>View and manage your personal details and activities.</p>
+  </header>
+
+  <main>
+    <!-- Profile Information Section -->
+    <section class="profile-section">
+      <h2>Profile Information</h2>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" value="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" value="johndoe@example.com">
+        </div>
+        <div class="form-group">
+          <label for="education">Education:</label>
+          <input type="text" id="education" value="B.Sc. in Computer Science">
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience:</label>
+          <textarea id="experience" rows="4">5 years in software development.</textarea>
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+
+    <!-- Personal Details Section -->
+    <section class="personal-details">
+      <h2>Personal Details</h2>
+      <p><strong>First Name:</strong> John</p>
+      <p><strong>Last Name:</strong> Doe</p>
+      <p><strong>Email:</strong> johndoe@example.com</p>
+      <p><strong>Phone Number:</strong> 123-456-7890</p>
+    </section>
+
+    <!-- Posts Section -->
+    <section class="posts-section">
+      <h2>Your Posts</h2>
+      <ul>
+        <li>Just started my new job at Tech Solutions!</li>
+        <li>Attended a great workshop on data analytics.</li>
+      </ul>
+    </section>
+
+    <!-- CV Section -->
+    <section class="cv-section">
+      <h2>Your CV</h2>
+      <a href="uploads/johndoe_cv.pdf" target="_blank" class="cv-link">View CV</a>
+    </section>
+
+    <a href="homepage.html" class="home-button">Back to Home</a>
+  </main>
+
+  <script>
+    // JavaScript code to handle form submission
+    document.getElementById("profile-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the form from submitting normally
+
+      // Collect input field values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const education = document.getElementById("education").value;
+      const experience = document.getElementById("experience").value;
+
+      // Simulate saving data (in practice, you'd send this to a backend server)
+      console.log("Profile Updated:", { name, email, education, experience });
+      
+      // Notify user
+      alert("Your profile has been updated successfully!");
+    });
+  </script>
+</body>
+</html>

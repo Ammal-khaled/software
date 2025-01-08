@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+  color: #ddd;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+section h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button, .home-button, .cv-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover, .home-button:hover, .cv-link:hover {
+  background-color: #0056b3;
+}
+
+/* Personal Details and Posts */
+.personal-details p, .posts-section ul {
+  margin: 10px 0;
+}
+
+.posts-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* CV Link Styling */
+.cv-link {
+  font-size: 1.1em;
+}

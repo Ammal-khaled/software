@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar | Alumni Platform</title>
+  <link rel="stylesheet" href="Eventstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Upcoming Events</h1>
+    <p>Join workshops, networking sessions, and career fairs hosted by alumni and professionals.</p>
+  </header>
+
+  <main class="events-list">
+    <section class="event-list">
+      <h2>Events</h2>
+      <ul>
+        <li>
+          <h3>Career Workshop</h3>
+          <p>Date: January 15, 2025</p>
+          <p>Time: 10:00 AM - 12:00 PM</p>
+          <p>Description: Learn essential career skills and resume tips.</p>
+          <button onclick="registerEvent('Career Workshop')">Register</button>
+          <button>Edit</button>
+          <button onclick="setReminder('Career Workshop', 'January 15, 2025', '10:00 AM')">Set Reminder</button>
+        </li>
+        <li>
+          <h3>Networking Session</h3>
+          <p>Date: January 20, 2025</p>
+          <p>Time: 5:00 PM - 6:30 PM</p>
+          <p>Description: Meet alumni and professionals in your field.</p>
+          <button onclick="registerEvent('Networking Session')">Register</button>
+          <button>Edit</button>
+          <button onclick="setReminder('Networking Session', 'January 20, 2025', '5:00 PM')">Set Reminder</button>
+        </li>
+      </ul>
+      <a href="homepage.html" class="home-button">Home</a>
+    </section>
+  </main>
+
+  <script src="Eventscript.js"></script>
+</body>
+</html>

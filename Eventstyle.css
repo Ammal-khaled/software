@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Playfair Display', serif;
+  background-color: #e7f5ff; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #0056b3; /* Deep blue header */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Main Event Section */
+main {
+  padding: 2rem;
+}
+
+.events-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.events-list li {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.events-list h3 {
+  font-size: 2rem;
+  color: #0056b3; /* Deep blue for event titles */
+}
+
+.events-list p {
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+button {
+  background-color: #0069d9; /* Medium blue button */
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin: 0.5rem 0.5rem 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Home Button */
+.home-button {
+  display: inline-block;
+  background-color: #008cba; /* Soft blue for the home button */
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #0078a6; /* Slightly darker blue on hover */
+}

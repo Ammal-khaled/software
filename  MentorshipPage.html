@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship | Alumni Platform</title>
+  <link rel="stylesheet" href="Mentorshipstyle.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Mentorship Program</h1>
+    <p>Find the right mentor to guide your career journey.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Bar -->
+    <section class="search-mentors">
+      <h2>Search for Mentors</h2>
+      <form id="mentor-search-form">
+        <input type="text" id="search-query" placeholder="Search by name, field, or expertise">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Mentor List -->
+    <section class="mentor-list">
+      <h2>Available Mentors</h2>
+      <ul>
+        <li>
+          <h3>Dr. Sarah Johnson</h3>
+          <p>Expertise: Data Science, Machine Learning</p>
+          <button onclick="contactMentor('sarah.johnson@example.com')">Request Mentorship</button>
+        </li>
+        <li>
+          <h3>John Doe</h3>
+          <p>Expertise: Software Development, Project Management</p>
+          <button onclick="contactMentor('john.doe@example.com')">Request Mentorship</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+
+</body>
+</html>

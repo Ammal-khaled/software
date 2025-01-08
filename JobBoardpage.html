@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board | Alumni Platform</title>
+  <link rel="stylesheet" href="JobBoardStyle.css">
+</head>
+<body>
+  <header>
+    <h1>Job Board</h1>
+    <p>Explore the latest opportunities and kickstart your career.</p>
+  </header>
+
+  <main>
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+      <h2>Available Jobs</h2>
+      <ul>
+        <li>
+          <h3>Software Developer Internship</h3>
+          <p><strong>Company:</strong> Tech Solutions</p>
+          <p><strong>Location:</strong> Remote</p>
+          <p><strong>Description:</strong> Work on exciting projects in a fast-paced environment.</p>
+          <button onclick="applyJob('hr@techsolutions.com')">Apply Now</button>
+        </li>
+        <li>
+          <h3>Data Analyst</h3>
+          <p><strong>Company:</strong> DataCorp</p>
+          <p><strong>Location:</strong> New York, NY</p>
+          <p><strong>Description:</strong> Analyze large datasets to derive actionable insights.</p>
+          <button onclick="applyJob('jobs@datacorp.com')">Apply Now</button>
+        </li>
+        <li>
+          <h3>UI/UX Designer</h3>
+          <p><strong>Company:</strong> DesignX</p>
+          <p><strong>Location:</strong> San Francisco, CA</p>
+          <p><strong>Description:</strong> Create intuitive and visually appealing designs for web and mobile apps.</p>
+          <button onclick="applyJob('careers@designx.com')">Apply Now</button>
+        </li>
+      </ul>
+      <a href="homepage.html" class="home-button">Home</a>
+    </section>
+  </main>
+
+  <script>
+    function applyJob(email) {
+      window.location.href = `mailto:${email}`;
+    }
+  </script>
+</body>
+</html>

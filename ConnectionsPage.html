@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connections | Alumni Platform</title>
+  <link rel="stylesheet" href="ConnectionsStyle.css">
+</head>
+<body>
+  <header>
+    <h1>Your Connections</h1>
+    <p>View and manage your connections within the alumni network.</p>
+  </header>
+
+  <main>
+    <section class="connections-list">
+      <h2>My Connections</h2>
+      <ul>
+        <li>
+          <h3>Sarah Johnson</h3>
+          <p>Data Scientist at TechCorp</p>
+          <button class="action-button">Message</button>
+        </li>
+        <li>
+          <h3>John Doe</h3>
+          <p>Software Engineer at CodeWorks</p>
+          <button class="action-button">Message</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="connection-requests">
+      <h2>Pending Requests</h2>
+      <ul>
+        <li>
+          <h3>Emily Brown</h3>
+          <p>Marketing Specialist</p>
+          <button class="action-button accept">Accept</button>
+          <button class="action-button reject">Reject</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="ConnectionsScript.js"></script>
+  
+  <section class="chat-section">
+  <h2>Chat</h2>
+  <div class="chat-window">
+    <div class="chat-header">
+      <h3>Chat with Sarah Johnson</h3>
+    </div>
+    <div class="chat-messages">
+      <p class="message sent">Hi Sarah!</p>
+      <p class="message received">Hi there! How can I help you?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message...">
+      <button class="send-button">Send</button>
+    </div>
+  </div>
+</section>
+</body>
+</html>
